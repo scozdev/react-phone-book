@@ -1,38 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 6px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size:3rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #333;
+}
+a {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fl{
+  text-align: left;
+  padding: 5px 0 15px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header , .content{
+  margin: auto;
+  display: block;
+  width: 400px;
+  padding-top: 30px ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+}
+.navs{
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.fl{
+  display: flex;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navs li {
+  padding: 5px;
+}
+.navs li a {
+  display: block;
+  width: 150px;
+  background-color: #eaeaea;
+	color: #333;
+  padding: 2px;
+  border-radius: 3px;
+}
+.navs li a:hover{
+  background: #333;
+  color: #fff;
+  border:1px solid #fff;
+  
+}
+.content li {
+  text-align: left;
+}
+input {
+  padding: 3px 6px;
+  margin:  0 5px;
+  border: 0;
+  border-radius: 3px;
+  
+}
+.content button {
+  padding: 3px;
+  width: 40px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
 }
